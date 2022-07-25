@@ -1,0 +1,4 @@
+The provided script runs without errors with the Anaconda environment described in the provided 'environment.yml' file.
+
+To clone this environment, please copy-paste 'conda env create -f environment.yml' in your Anaconda Prompt, or visit https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file 
+for more information  

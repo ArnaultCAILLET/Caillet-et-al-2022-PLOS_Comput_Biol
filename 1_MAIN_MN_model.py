@@ -310,11 +310,11 @@ print('#--------------------------------------------------------------------')
 ###############################################################################
 print('Reconstructing complete MN size population for the ', MN_pop, ' MNs')
 from calibrated_sizes_MOD import calibrated_sizes_func
-Real_MN_pop, Calib_sizes, popt, r2_size_calib= calibrated_sizes_func(Real_MN_pop,Calib_sizes, muscle, MN_pop) 
+Real_MN_pop, Calib_sizes, popt, r2_size_calib= calibrated_sizes_func(Real_MN_pop,Calib_sizes.astype(float), muscle, MN_pop) 
 a_size,c_size =round(popt[0],11), round(popt[1],4)
 
 def size_power(x,a,c): return a*2.4**(((x+1)/true_MN_pop)**c)
-if plot=='y': plot_size_distribution_func(Real_MN_pop, size_power, popt, a_size, c_size, r2_size_calib, Calib_sizes, MN_pop)
+if plot=='y': plot_size_distribution_func(Real_MN_pop, size_power, popt, a_size, c_size, r2_size_calib, Calib_sizes.astype(float), MN_pop)
 
 print('#--------------------------------------------------------------------')
 

@@ -13,13 +13,13 @@ and 2_MN_Model_Validation python codes.
 
 from EXP_DATA_PROCESSING_MOD import EXP_DATA_PROCESSING_func
 
-def load_MN_model_results(test, path_to_data, author='Hugh'):
+def load_MN_model_results(test, path_to_data, author='Hug'):
     import numpy as np   
     test_cases= np.array([['DelVecchio', 'TA_35_D', 'TA', 10.3,   20.5, 30,   0.35, 400, 2048],
-                          ['Hugh',       'test_dataset', 'TA', 10.5,   20.5, 30,   0.35, 400, 2048],
-                          ['Hugh',       'TA_35_H', 'TA', 10.5,   20.5, 30,   0.35, 400, 2048],
-                          ['Hugh',       'GM_30',   'GM', 9.1,    19.1, 33.5, 0.3,  400, 2048],
-                          ['Hugh',       'TA_50',   'TA', 12,     21.8, 34.5, 0.5,  400, 2048],
+                          ['Hug',       'test_dataset', 'TA', 10.5,   20.5, 30,   0.35, 400, 2048],
+                          ['Hug',       'TA_35_H', 'TA', 10.5,   20.5, 30,   0.35, 400, 2048],
+                          ['Hug',       'GM_30',   'GM', 9.1,    19.1, 33.5, 0.3,  400, 2048],
+                          ['Hug',       'TA_50',   'TA', 12,     21.8, 34.5, 0.5,  400, 2048],
                           ['Caillet',    'CA_TA_30','TA', 12.5,  32.5, 41, 0.3,  400, 2048],
                           ['Caillet',    'CaAr30_2','TA', 9,  29, 37, 0.3,  400, 2048],
                           ['Caillet',    'CaAr30_3','TA', 9,  29, 37, 0.3,  400, 2048],

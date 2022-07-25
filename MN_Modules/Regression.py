@@ -23,7 +23,7 @@ def func_power(x,a,b): return a*x**b
 
 
 
-def regression(X,Y, fun, muscle, MN_pop, sigma=None):
+def regression(X,Y, fun, muscle, MN_pop):#, sigma=None):
 
     if muscle =='TA' or muscle =='GM':
         def size_power(x,a,c): return a*2.4**(((x+1)/MN_pop)**c)# a*4**(((x+1)/400)**c)
@@ -39,7 +39,7 @@ def regression(X,Y, fun, muscle, MN_pop, sigma=None):
     elif fun=='size': func=size_power
     elif fun=='threshold': func=threshold_power
 
-    popt, pcov = curve_fit(func, X,Y, sigma=sigma)
+    popt, pcov = curve_fit(func, X,Y)#, sigma=sigma)
     residuals = Y- func(X, *popt)
     ss_res = np.sum(residuals**2)
     ss_tot = np.sum((Y-np.mean(Y))**2)
