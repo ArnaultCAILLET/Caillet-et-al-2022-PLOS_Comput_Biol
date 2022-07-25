@@ -34,7 +34,7 @@ disch_times : the lists of the MN discharge times, matrix
     '''
 
 # loading data
-    path_to_data = '../Arnault_PHD_model/Input_Exp_Data/' 
+    path_to_data = './Input_Exp_Data/' 
     mat = scipy.io.loadmat(path_to_data + test+'.mat') 
 
 #Extracting relevant data    
