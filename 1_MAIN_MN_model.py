@@ -378,7 +378,7 @@ if save == 'y':
     np.save(prefix+'exp_force', Force[range_start:range_stop], allow_pickle=True) #EXP FORCE
     np.save(prefix+'exp_discharge_times', disch_times, allow_pickle=True) #EXP SPIKE TRAINS
     np.save(prefix+'PRED_discharge_times', Firing_times_sim, allow_pickle=True) #PREDICTED DISCH TIMES
-    np.save(prefix+'parameters', [range_start,range_stop, t_start, end_force, Nb_MN, Cm_calib, Cm_derec_calib, adapt_kR], allow_pickle=True) # PARAMETERS TAKEN FOR SIMULATION
+    np.save(prefix+'parameters', [range_start,range_stop, t_start, end_force, Nb_MN, Cm_derec_calib, adapt_kR], allow_pickle=True) # PARAMETERS TAKEN FOR SIMULATION
     np.save(prefix+'MAIN_results', [Real_MN_pop, Calib_sizes, Cm_rec, Cm_derec, a_size, c_size, r2_size_calib,  kR_derec, r2_exp, nRMSE_exp, r2_sim, nRMSE_sim], allow_pickle=True) # MAIN RESULTS
     # cALIBRATION PERFORMANCE
     np.save(prefix+'calib_onset_error', Calib_delta_tf1, allow_pickle=True) 
