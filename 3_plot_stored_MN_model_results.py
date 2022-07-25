@@ -26,9 +26,9 @@ path_to_data = root / "Results"
 #------------------------------------------------------------------------------
 #Choose Trial the results of which you wish to plot
 # test = 'TA_35_D'
-test = 'TA_35_H'
+# test = 'TA_35_H'
 # test = 'TA_50'
-# test='GM_30'
+test='GM_30'
 path_to_data = path_to_data / test 
 plot_FIDFs='no'
 #------------------------------------------------------------------------------
