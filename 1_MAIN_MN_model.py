@@ -98,8 +98,8 @@ test='TA_35_D'
 # test='TA_50'
 # test='GM_30'
 
-Cm_derec_calib='yes'
-# Cm_derec_calib='no'
+# Cm_derec_calib='yes'
+Cm_derec_calib='no'
 
 if Cm_derec_calib=='yes':
     Cm_derec_array=np.arange(1.6,2.4,0.2)*10**-2
@@ -113,8 +113,8 @@ plot='y'
 # plot='n'
 
 
-save='y'
-# save='n'
+# save='y'
+save='n'
 
 
 
@@ -137,6 +137,7 @@ Nb_MN, Force, disch_times = EXP_DATA_PROCESSING_func(author, test)
 from Reshaping_MOD import preprocessing_func
 Force, time, MN_list, t_start, t_stop, t_stop_calib, kR, Cm_rec, step_size = preprocessing_func(author, Force, end_force, fs, Nb_MN, plateau_time1, plateau_time2)
 
+MN_pop=32
 true_MN_pop = MN_pop
 MN_pool_list=np.arange(0,true_MN_pop,1)
 
@@ -373,7 +374,7 @@ print('#--------------------------------------------------------------------')
 # 7. # SAVING OUTPUTS
 ############################################################################### 
 if save == 'y': 
-    prefix = author+'_'+test+'_'
+    prefix = author+'_'+test+'_32_'
     np.save(prefix+'time_array', time[range_start:range_stop], allow_pickle=True) # TIME ARRAY
     np.save(prefix+'exp_force', Force[range_start:range_stop], allow_pickle=True) #EXP FORCE
     np.save(prefix+'exp_discharge_times', disch_times, allow_pickle=True) #EXP SPIKE TRAINS
