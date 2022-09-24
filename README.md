@@ -7,9 +7,8 @@ The code is associated with the following publication:
 @article{caillet2022estimation,
   title={Estimation of the firing behaviour of a complete motoneuron pool by combining EMG signal decomposition and realistic motoneuron modelling},
   author={Caillet, Arnault and Phillips, Andrew TM and Farina, Dario and Modenese, Luca},
-  journal={bioRxiv},
-  year={2022},
-  publisher={Cold Spring Harbor Laboratory}
+  journal={PLOS Computational Biology},
+  year={2022}
 }
 ```
 
